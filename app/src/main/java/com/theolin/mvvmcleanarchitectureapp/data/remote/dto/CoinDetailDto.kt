@@ -77,9 +77,8 @@ data class CoinDetailDto(
         @SerializedName("link") var link: String,
         @SerializedName("thumbnail") var thumbnail: String
     )
-<<<<<<< HEAD
 
-    suspend fun CoinDetailDto.toCoinDetail() : CoinDetail{
+      fun toCoinDetail() : CoinDetail{
         return CoinDetail(
             coinId = id,
             name = name ,
@@ -91,6 +90,4 @@ data class CoinDetailDto(
             team = team
         )
     }
-=======
->>>>>>> origin/master
 }
